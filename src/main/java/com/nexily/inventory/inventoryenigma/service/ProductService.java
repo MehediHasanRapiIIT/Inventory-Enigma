@@ -5,9 +5,10 @@ import com.nexily.inventory.inventoryenigma.dto.ProductDto;
 import com.nexily.inventory.inventoryenigma.entity.Product;
 import com.nexily.inventory.inventoryenigma.exception.ProductNotFoundException;
 import com.nexily.inventory.inventoryenigma.repository.ProductRepository;
-import jakarta.transaction.Transactional;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
