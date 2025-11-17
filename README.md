@@ -13,9 +13,6 @@ A Spring Boot REST API for managing products, inventory, invoices, and analytics
 - [Installation & Setup](#installation--setup)
 - [Database Schema](#database-schema)
 - [API Documentation](#api-documentation)
-- [Testing Guide](#testing-guide)
-- [Project Architecture](#project-architecture)
-- [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -148,7 +145,7 @@ Before starting, ensure you have these installed:
 
 ```bash
 # Clone the project
-git clone https://github.com/yourusername/inventory-enigma.git
+git clone https://github.com/MehediHasanRapiIIT/Inventory-Enigma
 
 # Navigate to project directory
 cd inventory-enigma
