@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "products")
@@ -39,6 +41,9 @@ public class Product {
 
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdDate;
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<StockLog> stockLogs = new ArrayList<>();
 
     @PrePersist
     protected void onCreate() {

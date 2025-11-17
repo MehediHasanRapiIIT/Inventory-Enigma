@@ -4,6 +4,7 @@ package com.nexily.inventory.inventoryenigma.controller;
 import com.nexily.inventory.inventoryenigma.dto.ProductDto;
 import com.nexily.inventory.inventoryenigma.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/products")
 @RequiredArgsConstructor
+@Tag(name="Product Management", description = "Add, Remove, Update, Delete")
 public class ProductController {
 
     private final ProductService productService;

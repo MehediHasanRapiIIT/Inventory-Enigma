@@ -35,6 +35,7 @@ public class Invoice {
     @OneToMany(mappedBy = "invoice", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<InvoiceItem> items = new ArrayList<>();
 
+    @PrePersist
     protected void onCreate(){
         createdAt = LocalDateTime.now();
     }
