@@ -185,18 +185,6 @@ sudo -u postgres psql
 -- Create database
 CREATE DATABASE inventory_enigma;
 
--- Create user (optional, recommended for production)
-CREATE USER inventory_user WITH PASSWORD 'secure_password123';
-
--- Grant privileges
-GRANT ALL PRIVILEGES ON DATABASE inventory_enigma TO inventory_user;
-
--- Connect to database
-\c inventory_enigma
-
--- Grant schema privileges (PostgreSQL 15+)
-GRANT ALL ON SCHEMA public TO inventory_user;
-
 -- Verify database created
 \l
 
